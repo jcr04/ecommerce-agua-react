@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
+import './styles.css';
+
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
