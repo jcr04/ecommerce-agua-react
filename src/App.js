@@ -4,8 +4,8 @@ import Home from './pages/Home';
 import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
+import Colaboradores from './pages/Colaboradores';
 import './styles.css';
-
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -27,6 +27,7 @@ const App = () => {
         <Route path="/checkout">
           <Checkout cartItems={cartItems} />
         </Route>
+        <Route path="/colaboradores" component={Colaboradores} />
       </Switch>
     </BrowserRouter>
   );
