@@ -5,17 +5,29 @@ const ProductDetail = ({ match }) => {
   const productId = match.params.id;
 
   // Exemplo de dados de produto (pode ser substituído por dados reais obtidos de uma API)
-  const product = {
-    id: productId,
-    name: 'Água Mineral 500ml',
-    price: 2.5,
-    description: 'Água mineral de alta qualidade em garrafa de 500ml.',
-  };
+  const products = [
+    {
+      id: 1,
+      name: 'Água Mineral 500ml',
+      price: 2.5,
+      description: 'Água mineral de alta qualidade em garrafa de 500ml.',
+    },
+    {
+      id: 2,
+      name: 'Água Mineral 1L',
+      price: 4.5,
+      description: 'Água mineral de alta qualidade em garrafa de 1L.',
+    },
+    // Adicione as descrições dos outros produtos aqui
+  ];
+
+  const product = products.find((product) => product.id === parseInt(productId));
 
   const [addedToCart, setAddedToCart] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
 
   const handleAddToCart = () => {
-    // Adicionar lógica para adicionar o item ao carrinho de compras
+    setCartItems([...cartItems, product]);
     setAddedToCart(true);
   };
 
