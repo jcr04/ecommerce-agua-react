@@ -6,7 +6,7 @@ esse app feito em react tem como objetivo criar um ecommerce de venda de agua, o
 
 ## Produtos
 Menu prototipo de produtos do E-commerce Water.Inc
-<img width="960" alt="Screenshot_17" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/b9e04b77-ba99-48a2-94fb-72a0097283b2">
+<img width="960" alt="Screenshot_19" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/9ee1ca33-001b-40a1-8311-99196aef3e58">
 
 ## Colaboradores
 Page prototipo de cadastro de Clientes
