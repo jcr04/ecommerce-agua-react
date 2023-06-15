@@ -6,7 +6,8 @@ import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import Colaboradores from './pages/Colaboradores';
 import Menu from './components/Menu';
-import './styles.css';
+import './App.css'
+import './styles.css'
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
