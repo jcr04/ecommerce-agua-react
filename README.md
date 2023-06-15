@@ -14,6 +14,7 @@ Page prototipo de cadastro de Clientes
 
 ## new feature(discription)
 adicionei descrição de produtos
+
 <img width="370" alt="Screenshot_2" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/e406ee01-fc6a-47ac-b143-7ba7ed24f33c">
 
 
