@@ -28,7 +28,6 @@ const Home = ({ handleAddToCart }) => {
 
   return (
     <div>
-      <h1>Water.inc</h1>
       {products.length === 0 ? (
         <p>Carregando produtos...</p>
       ) : (
