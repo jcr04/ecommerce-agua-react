@@ -18,7 +18,36 @@ const ProductDetail = ({ match }) => {
       price: 4.5,
       description: 'Água mineral de alta qualidade em garrafa de 1L.',
     },
-    // Adicione as descrições dos outros produtos aqui
+    {
+      id: 3,
+      name: 'Água Mineral 5L',
+      price: 10.0,
+      description: 'Água mineral de alta qualidade em garrafa de 5L.',
+    },
+    {
+      id: 4,
+      name: 'Água Mineral com Gás 500ml',
+      price: 3.0,
+      description: 'Água mineral com gas natural e açúcar refrigerante em garrafa de 500ml',
+    },
+    {
+      id: 5,
+      name: 'Água Mineral com Gás 1l',
+      price: 5.0,
+      description: 'Água mineral com gas natural e açúcar refrigerante em garrafa de 1l',
+    },
+    {
+      id: 6,
+      name: 'Água Mineral com Gás 2l',
+      price: 7.0,
+      description: 'Água mineral com gas natural e açúcar refrigerante em garrafa de 2l',
+    },
+    {
+      id: 7,
+      name: 'Água Mineral com Gás 5l',
+      price: 15.0,
+      description: 'Água mineral com gas natural e açúcar refrigerante em garrafa de 5l',
+    },
   ];
 
   const product = products.find((product) => product.id === parseInt(productId));
