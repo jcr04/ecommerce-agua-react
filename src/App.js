@@ -5,6 +5,7 @@ import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import Colaboradores from './pages/Colaboradores';
+import Menu from './components/Menu';
 import './styles.css';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <Menu /> {/* Adicione o componente Menu aqui */}
       <Switch>
         <Route exact path="/">
           <Home handleAddToCart={handleAddToCart} />
