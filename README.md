@@ -9,7 +9,7 @@ Menu prototipo de produtos do E-commerce Water.Inc
 <img width="960" alt="Screenshot_17" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/b9e04b77-ba99-48a2-94fb-72a0097283b2">
 
 ## Colaboradores
-Page de cadastro de Clientes
+Page prototipo de cadastro de Clientes
 <img width="385" alt="Screenshot_18" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/9adf77f5-8bef-4919-bac5-10e38f85d0fe">
 
 ### Requisição Get JSON Products:
