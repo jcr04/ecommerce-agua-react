@@ -1,8 +1,8 @@
 # lojinha de agua - Water.Inc
 
 ## resumo
-(APP em desenvolvimento)
-esse app feito em react tem como objetivo criar um ecommerce de venda de agua, onde o cliente pode ter varias opções de produtos como 500ml, litros e galões.
+(Site em desenvolvimento)
+esse site feito em react tem como objetivo criar um ecommerce de venda de agua, onde o cliente pode ter varias opções de produtos como 500ml, litros e galões.
 
 ## Produtos
 Menu prototipo de produtos do E-commerce Water.Inc
