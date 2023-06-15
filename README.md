@@ -13,4 +13,4 @@ Page prototipo de cadastro de Clientes
 <img width="960" alt="Screenshot_18" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/19c3d639-acd0-4488-8400-a5d4c92f785c">
 
 ### Requisição Get JSON Products:
-<img width="449" alt="Screenshot_16" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/01c7dd8e-8238-45a3-a887-c80535408f68">
+<img width="139" alt="Screenshot_16" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/b22ce7a2-02b9-4b5e-9acd-36ac64c4b945">
