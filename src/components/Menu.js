@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import CartPage from './CartPage';
 
 const Menu = () => {
+  const [showCart,] = useState(false);
+
   const menuItems = [
     { path: '/', label: 'Water.inc' },
     { path: '/produtos', label: 'Produtos' },
@@ -21,6 +24,9 @@ const Menu = () => {
           </Link>
         ))}
       </div>
+
+      {/* Renderize a página do carrinho apenas quando showCart for true */}
+      {showCart && <CartPage />}
     </nav>
   );
 };
