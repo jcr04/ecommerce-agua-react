@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
-import ProductDetail from './components/ProductDetail';
+import Home from './components/Home';
+import ProductDetail from './pages/ProductDetail';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import Colaboradores from './pages/Colaboradores';
