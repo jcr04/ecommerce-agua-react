@@ -1,6 +1,10 @@
 import React from 'react';
 
 const CartPage = ({ cartItems }) => {
+  if (!cartItems) {
+    return <p>Carregando...</p>;
+  }
+
   return (
     <div className="cart-container">
       <h2>Carrinho de Compras</h2>
@@ -27,6 +31,10 @@ const CartPage = ({ cartItems }) => {
 };
 
 const calculateTotal = (cartItems) => {
+  if (!cartItems) {
+    return '0.00';
+  }
+
   return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
 };
 
