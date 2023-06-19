@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Switch, Route } from 'react-router-dom';
 import ProductList from '../pages/ProductList';
+import CartPage from '../pages/CartPage';
 
 const Home = ({ handleAddToCart }) => {
   const [products, setProducts] = useState([
@@ -12,6 +14,7 @@ const Home = ({ handleAddToCart }) => {
     { id: 6, name: "Água Mineral com gás 2L", price: 7.0, image: "url-da-imagem" },
     { id: 7, name: "Água Mineral com gás 5L", price: 15.0, image: "url-da-imagem" },
   ]);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -31,10 +34,12 @@ const Home = ({ handleAddToCart }) => {
       {products.length === 0 ? (
         <p>Carregando produtos...</p>
       ) : (
-        <ProductList products={products} handleAddToCart={handleAddToCart} />
+        <Switch>
+          <Route exact path="/" render={() => <ProductList products={products} handleAddToCart={handleAddToCart} />} />
+          <Route path="/carrinho" render={() => <CartPage cartItems={cartItems} />} />
+        </Switch>
       )}
     </div>
   );
 };
-
 export default Home;
