@@ -4,7 +4,7 @@ import Home from './components/Home';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
-import Colaboradores from './pages/Colaboradores';
+import Colaboradores from './pages/Collaborators';
 import Menu from './components/Menu';
 import './App.css'
 
