@@ -8,7 +8,6 @@ import Colaboradores from './pages/Collaborators';
 import Menu from './components/Menu';
 import './App.css'
 
-
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
 

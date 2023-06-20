@@ -1,5 +1,9 @@
 import React from 'react';
 
+const calculateTotal = (cartItems) => {
+  return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
+};
+
 const CartPage = ({ cartItems }) => {
   return (
     <div className="cart-container">
@@ -24,10 +28,6 @@ const CartPage = ({ cartItems }) => {
       </div>
     </div>
   );
-};
-
-const calculateTotal = (cartItems) => {
-  return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
 };
 
 export default CartPage;
