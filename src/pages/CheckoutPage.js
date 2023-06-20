@@ -28,9 +28,7 @@ const CheckoutPage = () => {
 
       const handleCheckout = () => {
         // Processar o pagamento com base no método de pagamento selecionado
-        // e redirecionar para a página de confirmação
-    
-        // Exemplo simplificado apenas para demonstração
+        
         if (paymentMethod) {
           alert(`Pagamento realizado com sucesso usando ${paymentMethod}!`);
         }
