@@ -16,7 +16,7 @@ const CheckoutPage = () => {
           };
       
           calculateTotalPrice();
-    }, []);
+    }, [selectedProducts]);
 
     const handlePaymentMethodChange = (event) => {
         setPaymentMethod(event.target.value);
@@ -28,14 +28,14 @@ const CheckoutPage = () => {
 
       const handleCheckout = () => {
         // Processar o pagamento com base no método de pagamento selecionado
-        
+
         if (paymentMethod) {
           alert(`Pagamento realizado com sucesso usando ${paymentMethod}!`);
         }
       };
     
       return (
-        <div>
+        <div className='CheckoutPage'>
           <h2>Checkout</h2>
           <p>Total Price: {totalPrice}</p>
           <h3>Selected Products:</h3>
@@ -81,7 +81,7 @@ const CheckoutPage = () => {
           {paymentMethod === 'credit_card' && (
             <div>
               <label>
-                Installments:
+                Parcelas:
                 <input
                   type="number"
                   value={installments}

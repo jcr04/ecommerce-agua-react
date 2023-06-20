@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './components/Cart';
-import Checkout from './components/Checkout';
+import CheckoutPage from './pages/CheckoutPage'; // Importe a página de CheckoutPage corretamente
 import Colaboradores from './pages/Collaborators';
 import Menu from './components/Menu';
-import './App.css'
+import './App.css';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -27,7 +27,7 @@ const App = () => {
           <Cart cartItems={cartItems} />
         </Route>
         <Route path="/checkout">
-          <Checkout cartItems={cartItems} />
+          <CheckoutPage /> {/* Renderize a página de CheckoutPage aqui */}
         </Route>
         <Route path="/colaboradores" component={Colaboradores} />
       </Switch>
