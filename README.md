@@ -24,7 +24,7 @@ método prototipo de recebimento de boleto
 método prototipo de recebimento de PixKey(ChavePix)
 <img width="960" alt="Screenshot_3" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/aa630d57-eaf0-4328-8228-8d9b8d24812d">
 
-### método Cartão de C´redito (paymentMethod && paymentData)
+### método Cartão de Crédito (paymentMethod && paymentData)
 método prototipo de recebimento de cartão de crédito
 <img width="957" alt="Screenshot_8" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/17acdcb0-d51e-484e-b1e2-e09e46bc3191">
 
