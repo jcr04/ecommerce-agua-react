@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Checkout = ({ cartItems }) => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+  const [purchaseCompleted, setPurchaseCompleted] = useState(false);
 
   const handleCheckout = () => {
-    // Adicionar lógica para finalizar a compra
-    alert('Compra finalizada!');
+    // Simulação de chamada assíncrona para finalizar a compra
+    setTimeout(() => {
+      setPurchaseCompleted(true);
+    }, 2000);
   };
 
   return (
@@ -24,7 +27,11 @@ const Checkout = ({ cartItems }) => {
             ))}
           </ul>
           <p>Total: R${totalPrice.toFixed(2)}</p>
-          <button onClick={handleCheckout}>Finalizar Compra</button>
+          {purchaseCompleted ? (
+            <p>Compra finalizada com sucesso!</p>
+          ) : (
+            <button onClick={handleCheckout}>Finalizar Compra</button>
+          )}
         </div>
       )}
     </div>

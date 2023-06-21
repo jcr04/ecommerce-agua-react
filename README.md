@@ -12,6 +12,10 @@ Menu prototipo de produtos do E-commerce Water.Inc
 Page prototipo de cadastro de Clientes
 <img width="960" alt="Screenshot_18" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/19c3d639-acd0-4488-8400-a5d4c92f785c">
 
+## Pagamentos (paymentMethod)
+adicionando sistema de pagamento prototipo
+<img width="370" alt="Screenshot_17" src="https://![Alt text](Screenshot_3.png)
+
 ## new feature(Details & discription)
 adicionei detalhes e descrição de produtos
 
