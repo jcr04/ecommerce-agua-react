@@ -14,7 +14,7 @@ Page prototipo de cadastro de Clientes
 
 ## Pagamentos (paymentMethod)
 adicionando sistema de pagamento prototipo
-<img width="370" alt="Screenshot_17" src="https://![Alt text](Screenshot_3.png)
+src="https://![Alt text](Screenshot_3.png)
 
 ## new feature(Details & discription)
 adicionei detalhes e descrição de produtos
