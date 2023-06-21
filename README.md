@@ -12,6 +12,16 @@ Menu prototipo de produtos do E-commerce Water.Inc
 Page prototipo de cadastro de Clientes
 <img width="960" alt="Screenshot_18" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/19c3d639-acd0-4488-8400-a5d4c92f785c">
 
+## new feature(Details & discription)
+adicionei detalhes e descrição de produtos
+
+<img width="370" alt="Screenshot_2" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/e406ee01-fc6a-47ac-b143-7ba7ed24f33c">
+
+## Carrinho(Feature)
+adicionando pagina carrinho prototipo
+
+![Alt text](Screenshot_9.png)
+
 ## Pagamentos (paymentMethod)
 adicionando sistema de pagamento prototipo
 ![Alt text](Screenshot_3.png)
@@ -27,16 +37,6 @@ método prototipo de recebimento de PixKey(ChavePix)
 ### método Cartão de Crédito (paymentMethod && paymentData)
 método prototipo de recebimento de cartão de crédito
 <img width="957" alt="Screenshot_8" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/17acdcb0-d51e-484e-b1e2-e09e46bc3191">
-
-## new feature(Details & discription)
-adicionei detalhes e descrição de produtos
-
-<img width="370" alt="Screenshot_2" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/e406ee01-fc6a-47ac-b143-7ba7ed24f33c">
-
-## Carrinho(Feature)
-adicionando pagina carrinho prototipo
-
-![Alt text](Screenshot_9.png)
 
 ### Requisição Get JSON Products:
 <img width="350" alt="Screenshot_16" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/b22ce7a2-02b9-4b5e-9acd-36ac64c4b945">
