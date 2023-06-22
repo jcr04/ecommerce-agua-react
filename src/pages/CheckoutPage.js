@@ -1,11 +1,33 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import PaymentForm from './PaymentForm';
 
 const CheckoutPage = () => {
-  const [selectedProducts, setSelectedProducts] = useState([]);
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const selectedProductIds = Array.from(queryParams.getAll('productId')); // Obter os IDs dos produtos selecionados
+
+  const [selectedProducts, setSelectedProducts] = useState([]); // Array para armazenar os detalhes dos produtos selecionados
   const [totalPrice, setTotalPrice] = useState(0);
   const [paymentMethod, setPaymentMethod] = useState('');
   const [installments, setInstallments] = useState(1);
+
+  useEffect(() => {
+    // Simule a busca dos detalhes dos produtos com base nos IDs
+    const fetchSelectedProducts = () => {
+      const products = selectedProductIds.map((productId) => {
+        // Substitua esta lógica pela busca dos detalhes do produto a partir do ID
+        return {
+          id: productId,
+          name: `Product ${productId}`,
+          price: 10, // Preço fictício para exemplo
+        };
+      });
+      setSelectedProducts(products);
+    };
+
+    fetchSelectedProducts();
+  }, [selectedProductIds]);
 
   useEffect(() => {
     const calculateTotalPrice = () => {
@@ -43,8 +65,8 @@ const CheckoutPage = () => {
   return (
     <div className='CheckoutPage'>
       <h2>Checkout</h2>
-      <p>Total Price: {totalPrice}</p>
-      <h3>Selected Products:</h3>
+      <p>Preço Total: {totalPrice}</p>
+      <h3>Produtos selecionados:</h3>
       <ul>
         {selectedProducts.map((product) => (
           <li key={product.id}>{product.name} - ${product.price}</li>
