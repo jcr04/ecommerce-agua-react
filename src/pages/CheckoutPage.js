@@ -14,16 +14,30 @@ const CheckoutPage = () => {
 
   useEffect(() => {
     // Simule a busca dos detalhes dos produtos com base nos IDs
-    const fetchSelectedProducts = () => {
-      const products = selectedProductIds.map((productId) => {
-        // Substitua esta lógica pela busca dos detalhes do produto a partir do ID
-        return {
-          id: productId,
-          name: `Product ${productId}`,
-          price: 10, // Preço fictício para exemplo
-        };
-      });
-      setSelectedProducts(products);
+    const fetchSelectedProducts = async () => {
+      const products = await Promise.all(
+        selectedProductIds.map(async (productId) => {
+          try {
+            const response = await fetch(`http://localhost:3001/products/${productId}`);
+            const productData = await response.json();
+
+            // Substitua esta lógica pela busca dos detalhes do produto a partir do ID,
+            // incluindo o preço obtido do JSON da sua aplicação
+            const product = {
+              id: productData.id,
+              name: productData.name,
+              price: productData.price, // Preço obtido do JSON da aplicação
+            };
+
+            return product;
+          } catch (error) {
+            console.error(`Erro ao buscar detalhes do produto ${productId}`, error);
+            return null;
+          }
+        })
+      );
+
+      setSelectedProducts(products.filter((product) => product !== null));
     };
 
     fetchSelectedProducts();
