@@ -29,7 +29,7 @@ prdoutos selecionando no carrinho irá para pagina de checkout
 
 ### checkoutPage: 
 prodouto aparecerá com os iD pela requisição do Json Server
-<img width="954" alt="Screenshot_4" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/5a5d02a8-4bbb-4f09-af00-8d3f32cca570">
+<img width="951" alt="Screenshot_8" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/cf9756b0-79a9-4f52-8cc9-22d45bcd1631">
 
 ## Pagamentos (paymentMethod)
 adicionando sistema de pagamento prototipo
