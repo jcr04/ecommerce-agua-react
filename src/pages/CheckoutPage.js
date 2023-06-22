@@ -1,11 +1,47 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import PaymentForm from './PaymentForm';
 
 const CheckoutPage = () => {
-  const [selectedProducts, setSelectedProducts] = useState([]);
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const selectedProductIds = Array.from(queryParams.getAll('productId')); // Obter os IDs dos produtos selecionados
+
+  const [selectedProducts, setSelectedProducts] = useState([]); // Array para armazenar os detalhes dos produtos selecionados
   const [totalPrice, setTotalPrice] = useState(0);
   const [paymentMethod, setPaymentMethod] = useState('');
   const [installments, setInstallments] = useState(1);
+
+  useEffect(() => {
+    // Simule a busca dos detalhes dos produtos com base nos IDs
+    const fetchSelectedProducts = async () => {
+      const products = await Promise.all(
+        selectedProductIds.map(async (productId) => {
+          try {
+            const response = await fetch(`http://localhost:3001/products/${productId}`);
+            const productData = await response.json();
+
+            // Substitua esta lógica pela busca dos detalhes do produto a partir do ID,
+            // incluindo o preço obtido do JSON da sua aplicação
+            const product = {
+              id: productData.id,
+              name: productData.name,
+              price: productData.price, // Preço obtido do JSON da aplicação
+            };
+
+            return product;
+          } catch (error) {
+            console.error(`Erro ao buscar detalhes do produto ${productId}`, error);
+            return null;
+          }
+        })
+      );
+
+      setSelectedProducts(products.filter((product) => product !== null));
+    };
+
+    fetchSelectedProducts();
+  }, [selectedProductIds]);
 
   useEffect(() => {
     const calculateTotalPrice = () => {
@@ -43,8 +79,8 @@ const CheckoutPage = () => {
   return (
     <div className='CheckoutPage'>
       <h2>Checkout</h2>
-      <p>Total Price: {totalPrice}</p>
-      <h3>Selected Products:</h3>
+      <p>Preço Total: {totalPrice}</p>
+      <h3>Produtos selecionados:</h3>
       <ul>
         {selectedProducts.map((product) => (
           <li key={product.id}>{product.name} - ${product.price}</li>
