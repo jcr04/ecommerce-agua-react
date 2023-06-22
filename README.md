@@ -13,18 +13,18 @@ Page prototipo de cadastro de Clientes
 <img width="960" alt="Screenshot_18" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/19c3d639-acd0-4488-8400-a5d4c92f785c">
 
 ## new feature(Details & discription)
-adicionei detalhes e descrição de produtos
+adicionado detalhes e descrição de produtos
 
 <img width="370" alt="Screenshot_2" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/e406ee01-fc6a-47ac-b143-7ba7ed24f33c">
 
 ## Carrinho(Feature)
-adicionando pagina carrinho prototipo
+adicionado pagina carrinho prototipo
 
 ![Alt text](Screenshot_9.png)
 
 ## checkout de Produtos(Array setSelectedProducts)
 ### cartPage:
-prduto selecionado no carrinho irá para pagina de checkout
+produto selecionado no carrinho irá para pagina de checkout
 <img width="950" alt="Screenshot_3" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/2c3ba19c-3c00-420f-88ca-b0655204b3b5">
 
 ### checkoutPage: 
@@ -32,7 +32,7 @@ produto aparecerá com o iD pela requisição do Json Server
 <img width="951" alt="Screenshot_8" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/cf9756b0-79a9-4f52-8cc9-22d45bcd1631">
 
 ## Pagamentos (paymentMethod)
-adicionando sistema de pagamento prototipo
+adicionado sistema de pagamento prototipo
 ![Alt text](Screenshot_3.png)
 
 ### método Boleto (paymentMethod && paymentData) 
