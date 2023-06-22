@@ -25,10 +25,10 @@ adicionando pagina carrinho prototipo
 ## checkout de Produtos(Array setSelectedProducts)
 ### cartPage:
 prdoutos selecionando no carrinho irá para pagina de checkout
-<img width="370" alt="Screenshot_3" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/2c3ba19c-3c00-420f-88ca-b0655204b3b5">
+<img width="950" alt="Screenshot_3" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/2c3ba19c-3c00-420f-88ca-b0655204b3b5">
 
 ### checkoutPage: 
-prdouto aparecerá com os iD e o price pela requisição do Json Server
+prodouto aparecerá com os iD pela requisição do Json Server
 <img width="954" alt="Screenshot_4" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/5a5d02a8-4bbb-4f09-af00-8d3f32cca570">
 
 ## Pagamentos (paymentMethod)
