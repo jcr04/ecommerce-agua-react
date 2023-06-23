@@ -12,6 +12,10 @@ Menu prototipo de produtos do E-commerce Water.Inc
 Page prototipo de cadastro de Clientes
 <img width="960" alt="Screenshot_18" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/19c3d639-acd0-4488-8400-a5d4c92f785c">
 
+## AdmimPage
+Criação de Crud de Colaboradores
+<img width="960" alt="Screenshot_10" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/d9beb1a3-07f3-4a51-8ed9-ae818a54f268">
+
 ## new feature(Details & discription)
 adicionado detalhes e descrição de produtos
 
@@ -49,5 +53,9 @@ método prototipo de recebimento de cartão de crédito
 
 ### Requisição Get JSON Products:
 <img width="350" alt="Screenshot_16" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/b22ce7a2-02b9-4b5e-9acd-36ac64c4b945">
+
+## Requisição Get Json Colaboradores:
+<img width="437" alt="Screenshot_12" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/c9c83892-b914-4669-accb-eb52452890c4">
+
 
 
