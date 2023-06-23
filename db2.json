@@ -1,0 +1,24 @@
+{
+  "colaboradores": [
+    {
+      "nome": "FabinTT",
+      "cargo": "Dev Backend",
+      "id": 5
+    },
+    {
+      "nome": "Luís Guilherme",
+      "cargo": "Dev Front-end",
+      "id": 6
+    },
+    {
+      "nome": "Gabriel",
+      "cargo": "Dev Front-end",
+      "id": 7
+    },
+    {
+      "nome": "João Carlos",
+      "cargo": "Dev Back-end",
+      "id": 8
+    }
+  ]
+}

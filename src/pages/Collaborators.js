@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
-
 const Colaboradores = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: ''
+    phone: '',
   });
 
   const handleChange = (e) => {
@@ -16,8 +15,12 @@ const Colaboradores = () => {
     e.preventDefault();
 
     if (formData.name && formData.email && formData.phone) {
-      console.log(formData);
-      setFormData({ name: '', email: '', phone: '' });
+      try {
+        console.log(formData);
+        setFormData({ name: '', email: '', phone: '' });
+      } catch (error) {
+        console.log(error);
+      }
     } else {
       alert('Por favor, preencha todos os campos obrigatórios.');
     }
