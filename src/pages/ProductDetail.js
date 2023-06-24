@@ -48,6 +48,12 @@ const ProductDetail = ({ match }) => {
       price: 15.0,
       description: 'Água mineral com gas natural e açúcar refrigerante em garrafa de 5l',
     },
+    {
+      id: 8,
+      name: 'Galão de agua 20L',
+      price: 20.0,
+      description: 'Galão de Água mineral de 20L',
+    },
   ];
 
   const product = products.find((product) => product.id === parseInt(productId));

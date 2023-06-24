@@ -6,7 +6,8 @@
         { "id": 4, "name": "Água Mineral com gás 500mL", "price": 3.0, "image": "url-da-imagem" },
         { "id": 5, "name": "Água Mineral com gás 1L", "price": 5.0, "image": "url-da-imagem" },
         { "id": 6, "name": "Água Mineral com gás 2L", "price": 7.0, "image": "url-da-imagem" },
-        { "id": 7, "name": "Água Mineral com gás 5L", "price": 15.0, "image": "url-da-imagem" }
+        { "id": 7, "name": "Água Mineral com gás 5L", "price": 15.0, "image": "url-da-imagem" },
+        { "id": 8, "name": "Galão de Água 20L", "price": 20.0, "image": "url-da-imagem" }
     ]
   }
   

@@ -30,15 +30,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Menu CSS */
 
 nav {
@@ -248,4 +239,107 @@ button:hover {
 
 .CheckoutPage-checkoutButton:hover {
   background-color: #0056b3;
+}
+
+/* AdminPage.css */
+
+.AdminPage {
+  text-align: center;
+}
+
+.AdminPage-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.AdminPage-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.AdminPage-formContainer {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.AdminPage-inputGroup {
+  margin-bottom: 10px;
+}
+
+.AdminPage-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.AdminPage-input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.AdminPage-buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.AdminPage-button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.AdminPage-button:hover {
+  background-color: darkblue;
+}
+
+.AdminPage-tableContainer {
+  margin-top: 20px;
+}
+
+.AdminPage-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.AdminPage-table th,
+.AdminPage-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.AdminPage-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.AdminPage-table td {
+  text-align: center;
+}
+
+.AdminPage-actionButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AdminPage-deleteButton {
+  background-color: red;
+}
+
+.AdminPage-deleteButton:hover {
+  background-color: darkred;
 }

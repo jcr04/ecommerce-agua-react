@@ -5,6 +5,7 @@ import ProductDetail from './pages/ProductDetail';
 import Cart from './components/Cart';
 import CheckoutPage from './pages/CheckoutPage'; // Importe a página de CheckoutPage corretamente
 import Colaboradores from './pages/Collaborators';
+import AdminPage from './pages/AdminPage';
 import Menu from './components/Menu';
 import './App.css';
 
@@ -30,6 +31,7 @@ const App = () => {
           <CheckoutPage /> {/* Renderize a página de CheckoutPage aqui */}
         </Route>
         <Route path="/colaboradores" component={Colaboradores} />
+        <Route path="/admin" component={AdminPage} />
       </Switch>
     </BrowserRouter>
   );
