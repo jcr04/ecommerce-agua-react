@@ -1,10 +1,12 @@
+// App.js
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './components/Cart';
-import CheckoutPage from './pages/CheckoutPage'; // Importe a página de CheckoutPage corretamente
-import Colaboradores from './pages/Collaborators';
+import CheckoutPage from './pages/CheckoutPage';
+import Collaborators from './pages/Collaborators';
+import Clientes from './pages/Clientes';
 import AdminPage from './pages/AdminPage';
 import Menu from './components/Menu';
 import './App.css';
@@ -16,9 +18,14 @@ const App = () => {
     setCartItems([...cartItems, item]);
   };
 
+  const addCollaborator = async (formData) => {
+    // Lógica para adicionar colaborador
+    // ...
+  };
+
   return (
     <BrowserRouter>
-      <Menu /> {/* Adicione o componente Menu aqui */}
+      <Menu />
       <Switch>
         <Route exact path="/">
           <Home handleAddToCart={handleAddToCart} />
@@ -28,9 +35,12 @@ const App = () => {
           <Cart cartItems={cartItems} />
         </Route>
         <Route path="/checkout">
-          <CheckoutPage /> {/* Renderize a página de CheckoutPage aqui */}
+          <CheckoutPage />
         </Route>
-        <Route path="/colaboradores" component={Colaboradores} />
+        <Route path="/collaborators" component={Collaborators} />
+        <Route path="/clientes">
+          <Clientes addCollaborator={addCollaborator} /> {/* Passe a função addCollaborator como propriedade */}
+        </Route>
         <Route path="/admin" component={AdminPage} />
       </Switch>
     </BrowserRouter>
