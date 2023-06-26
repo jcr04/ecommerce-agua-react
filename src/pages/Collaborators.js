@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const Colaboradores = () => {
   const [formData, setFormData] = useState({
@@ -12,16 +11,15 @@ const Colaboradores = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (formData.name && formData.email && formData.phone) {
       try {
-        const response = await axios.post('http://localhost:3002/colaboradores', formData);
-        console.log(response.data); // Exibe a resposta da API no console
+        console.log(formData);
         setFormData({ name: '', email: '', phone: '' });
       } catch (error) {
-        console.error(error);
+        console.log(error);
       }
     } else {
       alert('Por favor, preencha todos os campos obrigatórios.');
