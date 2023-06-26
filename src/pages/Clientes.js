@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-
 const Clients = ({ addCollaborator }) => {
   const [formData, setFormData] = useState({
     name: '',
@@ -12,8 +11,8 @@ const Clients = ({ addCollaborator }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3002/db2.json', formData); // Faça a requisição POST para db2.json com os dados do formData
-      setFormData({ name: '', email: '', phone: '' }); // Limpe o estado do formulário após adicionar o colaborador
+      await addCollaborator(formData); // Chama a função addCollaborator passando os dados do formulário
+      setFormData({ name: '', email: '', phone: '' }); // Limpa o estado do formulário após adicionar o colaborador
     } catch (error) {
       console.error(error);
     }
