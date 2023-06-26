@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Clientes from './Clientes';
 
 const Collaborators = () => {
   const [collaborators, setCollaborators] = useState([]);
@@ -143,40 +144,7 @@ const Collaborators = () => {
       </table>
 
       {/* Formulário de adição */}
-      <form onSubmit={addCollaborator}>
-        <h2>Adicionar Colaborador</h2>
-        <label>
-          Nome:
-          <input
-            type="text"
-            name="name"
-            value={editFormData.name}
-            onChange={handleEditChange}
-            required
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={editFormData.email}
-            onChange={handleEditChange}
-            required
-          />
-        </label>
-        <label>
-          Telefone:
-          <input
-            type="text"
-            name="phone"
-            value={editFormData.phone}
-            onChange={handleEditChange}
-            required
-          />
-        </label>
-        <button type="submit">Adicionar</button>
-      </form>
+      <Clientes addCollaborator={addCollaborator} />
 
       {/* Formulário de edição */}
       {editingCollaboratorId && (

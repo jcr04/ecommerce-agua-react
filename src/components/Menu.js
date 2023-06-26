@@ -8,7 +8,7 @@ import Clientes from '../pages/Clientes';
 
 const Menu = () => {
   const menuItems = [
-    { path: '/', label: 'Water.inc' },
+    { path: '/', label: 'Poseidon Delivery' },
     { path: '/produtos', label: 'Produtos' },
     { path: '/carrinho', label: 'Carrinho' },
     { path: '/colaboradores', label: 'Colaboradores' },
