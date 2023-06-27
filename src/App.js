@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import CheckoutPage from './pages/CheckoutPage';
 import Collaborators from './pages/Collaborators';
 import Clientes from './pages/Clientes';
+import Profile from './pages/Profile';
 import AdminPage from './pages/AdminPage';
 import Menu from './components/Menu';
 import './App.css';
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/collaborators" component={Collaborators} />
         <Route path="/clientes">
           <Clientes addCollaborator={addCollaborator} /> {/* Passe a função addCollaborator como propriedade */}
+        <Route path="/profile/:id" component={Profile} />
         </Route>
         <Route path="/admin" component={AdminPage} />
       </Switch>

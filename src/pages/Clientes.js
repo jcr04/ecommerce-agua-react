@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Clients = ({ addCollaborator }) => {
   const [formData, setFormData] = useState({
@@ -40,6 +41,20 @@ const Clients = ({ addCollaborator }) => {
         </label>
         <button type="submit">Adicionar Colaborador</button>
       </form>
+
+      {/* Lista de clientes */}
+      <h2>Clientes</h2>
+      <ul>
+        <li>
+          <span>Cliente 1</span>
+          <Link to="/profile/1">Ver Perfil</Link>
+        </li>
+        <li>
+          <span>Cliente 2</span>
+          <Link to="/profile/2">Ver Perfil</Link>
+        </li>
+        {/* Adicione mais clientes aqui */}
+      </ul>
     </div>
   );
 };
