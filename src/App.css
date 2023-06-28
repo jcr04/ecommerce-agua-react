@@ -343,3 +343,180 @@ button:hover {
 .AdminPage-deleteButton:hover {
   background-color: darkred;
 }
+
+/* Clients.css */
+.clients-container {
+  text-align: center;
+}
+
+.clients-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.clients-form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.clients-form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.clients-form-container input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.clients-form-container button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.clients-form-container button:hover {
+  background-color: darkblue;
+}
+
+.clients-list {
+  list-style: none;
+  padding: 0;
+}
+
+.clients-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.clients-list li span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.clients-list li a {
+  text-decoration: none;
+  color: blue;
+  margin-left: 10px;
+}
+
+/* Profile.css */
+.profile-container {
+  text-align: center;
+}
+
+.profile-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details p {
+  margin-bottom: 10px;
+}
+
+/* Collaborators.css */
+.collaborators-container {
+  text-align: center;
+}
+
+.collaborators-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.collaborators-form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.collaborators-form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.collaborators-form-container input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.collaborators-form-container button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.collaborators-form-container button:hover {
+  background-color: darkblue;
+}
+
+.collaborators-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.collaborators-table th,
+.collaborators-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.collaborators-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.collaborators-table td {
+  text-align: center;
+}
+
+.collaborators-action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collaborators-delete-button {
+  background-color: red;
+}
+
+.collaborators-delete-button:hover {
+  background-color: darkred;
+}
