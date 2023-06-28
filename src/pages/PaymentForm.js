@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import QRCode from 'react-qr-code';
 
 const PaymentForm = ({ paymentMethod, onSubmit }) => {
   const [cardNumber, setCardNumber] = useState('');
@@ -7,11 +8,17 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
   const [boletoNumber, setBoletoNumber] = useState('');
   const [pixKey, setPixKey] = useState('');
   const [description, setDescription] = useState('');
+  const [showQRCode, setShowQRCode] = useState(false);
+  const [qrCodeValue, setQRCodeValue] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Validar os dados do formulário antes de enviar
+    if (paymentMethod === 'pix') {
+      const qrCodeValue = Math.floor(Math.random() * 1000000).toString();
+      setQRCodeValue(qrCodeValue);
+      setShowQRCode(true);
+    }
 
     const paymentData = {
       cardNumber,
@@ -111,6 +118,12 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
               />
             </label>
           </div>
+        </div>
+      )}
+
+      {showQRCode && (
+        <div>
+          <QRCode value={qrCodeValue} />
         </div>
       )}
 
