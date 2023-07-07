@@ -91,17 +91,6 @@ const CheckoutPage = () => {
         <label>
           <input
             type="radio"
-            value="boleto"
-            checked={paymentMethod === 'boleto'}
-            onChange={handlePaymentMethodChange}
-          />
-          Boleto
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
             value="pix"
             checked={paymentMethod === 'pix'}
             onChange={handlePaymentMethodChange}
