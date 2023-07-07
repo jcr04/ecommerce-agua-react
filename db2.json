@@ -15,6 +15,12 @@
       "nome": "João Carlos",
       "cargo": "Dev Back-end",
       "id": 8
+    },
+    {
+      "name": "pedrinho",
+      "email": "pedrinho@gmail.com",
+      "phone": "982536287635",
+      "id": 9
     }
   ]
 }
