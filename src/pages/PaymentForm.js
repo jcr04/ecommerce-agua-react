@@ -5,7 +5,6 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
   const [cardNumber, setCardNumber] = useState('');
   const [expiryDate, setExpiryDate] = useState('');
   const [securityCode, setSecurityCode] = useState('');
-  const [boletoNumber, setBoletoNumber] = useState('');
   const [pixKey, setPixKey] = useState('');
   const [description, setDescription] = useState('');
   const [showQRCode, setShowQRCode] = useState(false);
@@ -24,7 +23,6 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
       cardNumber,
       expiryDate,
       securityCode,
-      boletoNumber,
       pixKey,
       description,
     };
@@ -34,25 +32,6 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      {paymentMethod === 'boleto' && (
-        <div>
-          <h4>Boleto Payment Details:</h4>
-          {/* Adicione os detalhes específicos para o pagamento por boleto aqui */}
-          <p>Imprimir boleto ou pegar código de barras</p>
-          <div>
-            <label>
-              Número do Boleto:
-              <input
-                type="text"
-                value={boletoNumber}
-                onChange={(event) => setBoletoNumber(event.target.value)}
-                required
-              />
-            </label>
-          </div>
-        </div>
-      )}
-
       {paymentMethod === 'pix' && (
         <div>
           <h4>Pix Payment Details:</h4>
