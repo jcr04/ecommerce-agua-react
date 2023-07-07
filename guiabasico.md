@@ -12,3 +12,8 @@ json-server --watch db2.json --port 3002
 
 
 Lembre-se de parar o servidor JSON Server quando não estiver mais usando-o executando Ctrl + C no terminal onde ele está sendo executado.
+
+-pra poder  instalar o jsonserver cópie e cole esse código: npm install -g json-serve 
+
+
+-para poder ter permissão no jsonserver cópie e cole o código: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
