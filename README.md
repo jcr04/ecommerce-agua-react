@@ -39,10 +39,6 @@ produto aparecerá com o iD pela requisição do Json Server
 adicionado sistema de pagamento prototipo
 ![Alt text](Screenshot_3.png)
 
-### método Boleto (paymentMethod && paymentData) 
-método prototipo de recebimento de boleto
-<img width="955" alt="Screenshot_2" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/954e189a-1ec4-4c23-a2c0-fb6095eacb37">
-
 ### método Pix (paymentMethod && paymentData)
 * método prototipo de recebimento de PixKey(ChavePix)
 <img width="960" alt="Screenshot_3" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/aa630d57-eaf0-4328-8228-8d9b8d24812d">
