@@ -10,6 +10,7 @@ import Clientes from './pages/Clientes';
 import Profile from './pages/Profile';
 import AdminPage from './pages/AdminPage';
 import Menu from './components/Menu';
+import Header from './components/Header';
 import './App.css';
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Menu />
+      <Header />
       <Switch>
         <Route exact path="/">
           <Home handleAddToCart={handleAddToCart} />
@@ -41,7 +42,7 @@ const App = () => {
         <Route path="/collaborators" component={Collaborators} />
         <Route path="/clientes">
           <Clientes addCollaborator={addCollaborator} /> {/* Passe a função addCollaborator como propriedade */}
-        <Route path="/profile/:id" component={Profile} />
+          <Route path="/profile/:id" component={Profile} />
         </Route>
         <Route path="/admin" component={AdminPage} />
       </Switch>
