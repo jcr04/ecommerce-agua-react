@@ -48,17 +48,6 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
               />
             </label>
           </div>
-          <div>
-            <label>
-              Descrição:
-              <input
-                type="text"
-                value={description}
-                onChange={(event) => setDescription(event.target.value)}
-                required
-              />
-            </label>
-          </div>
         </div>
       )}
 
