@@ -5,21 +5,23 @@ import ProductList from '../pages/ProductList';
 import CartPage from '../pages/CartPage';
 import Collaborators from '../pages/Collaborators';
 import Clientes from '../pages/Clientes';
+import logo from '../Imgs/Logo.png'
+import '../styles/Menu.css'
 
 const Menu = () => {
   const menuItems = [
     { path: '/', label: 'Poseidon Delivery' },
     { path: '/produtos', label: 'Produtos' },
-    { path: '/carrinho', label: 'Carrinho' },
+    { path: '/carrinho', label: 'Checkout' },
     { path: '/colaboradores', label: 'Colaboradores' },
     { path: '/clientes', label: 'Clientes' },
   ];
 
   return (
-    <div>
+    <div className='Header-nav'>
       <nav>
         <div className="logo">
-          <Link to={menuItems[0].path}>{menuItems[0].label}</Link>
+          <Link to={menuItems[0].path}><img src={logo} /></Link>
         </div>
         <div className="menu-buttons">
           {menuItems.slice(1).map((item) => (

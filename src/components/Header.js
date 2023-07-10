@@ -1,9 +1,10 @@
 import React from 'react';
+import Menu from './Menu';
 
 const Header = () => {
   return (
     <header>
-      <h1>E-commerce de Água - Água para todos </h1>
+      <Menu/>
       {/* Adicione outros elementos do cabeçalho aqui, como navegação, etc. */}
     </header>
   );

@@ -37,18 +37,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  
 }
 
-.logo {
+.logo img{
   font-size: 20px;
   font-weight: bold;
+  height: 60px;
 }
 
 .menu-buttons a {
   margin-right: 10px;
+  color: #f4f4f4;
 }
-
+.menu-buttons a:hover{
+  color: #bbb6b6;
+ }
 .form-container {
   width: 400px;
   margin: 0 auto;

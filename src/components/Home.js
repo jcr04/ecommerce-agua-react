@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ProductList from '../pages/ProductList';
 import CartPage from '../pages/CartPage';
+import Apresentacao from './Apresentacao';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -30,6 +31,7 @@ const Home = () => {
         <p>Carregando produtos...</p>
       ) : (
         <>
+        <Apresentacao/>
           <ProductList products={products} handleAddToCart={handleAddToCart} />
           <CartPage cartItems={cartItems} />
         </>
