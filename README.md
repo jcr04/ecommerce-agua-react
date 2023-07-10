@@ -3,6 +3,8 @@
 ## resumo
 (Site em desenvolvimento)
 esse site feito em react tem como objetivo criar um ecommerce de venda de agua, onde o cliente pode ter varias opções de produtos como 500ml, litros e galões.
+![Captura de tela 2023-07-10 195615](https://github.com/jcr04/ecommerce-agua-react/assets/70778525/c1d6af28-2d35-4419-b174-4e1e30bfd270)
+
 
 ## Produtos
 Menu prototipo de produtos do E-commerce Water.Inc
