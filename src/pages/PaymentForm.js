@@ -51,10 +51,8 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
         </div>
       )}
 
-      {paymentMethod === 'creditCard' && (
+      {paymentMethod !== 'boleto' && paymentMethod !== 'pix' && (
         <div>
-          <h4>Crédit Card Payment Details:</h4>
-          {/* Adicione os detalhes específicos para o pagamento por cartão de crédito aqui */}
           <div>
             <label>
               Número do Cartão:
