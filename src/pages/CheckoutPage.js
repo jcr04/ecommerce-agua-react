@@ -86,7 +86,7 @@ const CheckoutPage = () => {
           <li key={product.id}>{product.name} - ${product.price}</li>
         ))}
       </ul>
-      <h3>Payment Method:</h3>
+      <h3>Método de Pagamento:</h3>
       <div>
         <label>
           <input
@@ -106,7 +106,18 @@ const CheckoutPage = () => {
             checked={paymentMethod === 'credit_card'}
             onChange={handlePaymentMethodChange}
           />
-          Credit Card
+          Cartão de Crédito
+        </label>
+      </div>
+      <div>
+        <label>
+          <input
+            type="radio"
+            value="debit_card"
+            checked={paymentMethod === 'debit_card'}
+            onChange={handlePaymentMethodChange}
+          />
+          Cartão de Débito
         </label>
       </div>
       {paymentMethod === 'credit_card' && (
@@ -123,7 +134,7 @@ const CheckoutPage = () => {
       )}
       {paymentMethod && (
         <div>
-          <h3>Payment Details:</h3>
+          <h3>Forma de Pagamento:</h3>
           <PaymentForm paymentMethod={paymentMethod} onSubmit={handlePaymentSubmit} />
         </div>
       )}

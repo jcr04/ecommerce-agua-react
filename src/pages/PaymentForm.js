@@ -34,7 +34,6 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
     <form onSubmit={handleSubmit}>
       {paymentMethod === 'pix' && (
         <div>
-          <h4>Pix Payment Details:</h4>
           {/* Adicione os detalhes específicos para o pagamento por pix aqui */}
           <p>Chave Pix da empresa: 98983307627</p>
           <div>
@@ -51,7 +50,45 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
         </div>
       )}
 
-      {paymentMethod !== 'boleto' && paymentMethod !== 'pix' && (
+      {paymentMethod === 'credit_card' && (
+        <div>
+          <div>
+            <label>
+              Número do Cartão:
+              <input
+                type="text"
+                value={cardNumber}
+                onChange={(event) => setCardNumber(event.target.value)}
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Data de Validade:
+              <input
+                type="text"
+                value={expiryDate}
+                onChange={(event) => setExpiryDate(event.target.value)}
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              Código de Segurança:
+              <input
+                type="text"
+                value={securityCode}
+                onChange={(event) => setSecurityCode(event.target.value)}
+                required
+              />
+            </label>
+          </div>
+        </div>
+      )}
+
+      {paymentMethod === 'debit_card' && (
         <div>
           <div>
             <label>
