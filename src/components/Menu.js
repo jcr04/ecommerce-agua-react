@@ -1,18 +1,13 @@
-// Menu.js
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
-import ProductList from '../pages/ProductList';
-import CartPage from '../pages/CartPage';
-import Collaborators from '../pages/Collaborators';
-import Clientes from '../pages/Clientes';
-import logo from '../Imgs/Logo.png'
-import '../styles/Menu.css'
+import { Link } from 'react-router-dom';
+import logo from '../Imgs/Logo.png';
+import '../styles/Menu.css';
 
 const Menu = () => {
   const menuItems = [
     { path: '/', label: 'Poseidon Delivery' },
     { path: '/produtos', label: 'Produtos' },
-    { path: '/carrinho', label: 'Checkout' },
+    { path: '/checkout', label: 'Checkout' },
     { path: '/colaboradores', label: 'Colaboradores' },
     { path: '/clientes', label: 'Clientes' },
   ];
@@ -21,7 +16,7 @@ const Menu = () => {
     <div className='Header-nav'>
       <nav>
         <div className="logo">
-          <Link to={menuItems[0].path}><img src={logo} /></Link>
+          <Link to={menuItems[0].path}><img src={logo} alt="Logo" /></Link>
         </div>
         <div className="menu-buttons">
           {menuItems.slice(1).map((item) => (
@@ -31,13 +26,6 @@ const Menu = () => {
           ))}
         </div>
       </nav>
-
-      <Switch>
-        <Route path="/produtos" component={ProductList} />
-        <Route path="/carrinho" component={CartPage} />
-        <Route path="/colaboradores" component={Collaborators} />
-        <Route path="/clientes" component={Clientes} />
-      </Switch>
     </div>
   );
 };
