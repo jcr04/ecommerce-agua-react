@@ -10,6 +10,8 @@ import AdminPage from './pages/AdminPage';
 import Menu from './components/Menu';
 import Header from './components/Header';
 import CheckoutPage from './pages/CheckoutPage';
+import UserLoginPage from './pages/UserLoginPage';
+import AdminLoginPage from './pages/AdminLoginPage';
 import './App.css';
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
         <Route path="/clientes" component={Clientes} />
         <Route path="/profile/:id" component={Profile} />
         <Route path="/admin" component={AdminPage} />
+        <Route path="/login/user" component={UserLoginPage} />
+        <Route path="/login/admin" component={AdminLoginPage} />
       </Switch>
     </BrowserRouter>
   );

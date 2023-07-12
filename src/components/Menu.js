@@ -10,6 +10,7 @@ const Menu = () => {
     { path: '/checkout', label: 'Checkout' },
     { path: '/colaboradores', label: 'Colaboradores' },
     { path: '/clientes', label: 'Clientes' },
+    { path: '/login/user', label: 'Login' }, // Adicione o link para a página de login de usuário aqui
   ];
 
   return (
@@ -19,7 +20,7 @@ const Menu = () => {
           <Link to={menuItems[0].path}><img src={logo} alt="Logo" /></Link>
         </div>
         <div className="menu-buttons">
-          {menuItems.slice(1).map((item) => (
+          {menuItems.map((item) => (
             <Link key={item.label} to={item.path}>
               {item.label}
             </Link>
