@@ -6,14 +6,18 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const login = (userData) => {
-    // Aqui você pode realizar a lógica de validação dos dados de login
-    // e definir o usuário no estado local
-    setUser(userData);
+    // Realizar validação dos dados de login
+    if (userData.username === 'admin' && userData.password === 'admin123') {
+      // Dados de login válidos, definir o usuário no estado
+      setUser(userData);
+    } else {
+      // Dados de login inválidos
+      alert('Dados de login inválidos');
+    }
   };
 
   const logout = () => {
-    // Aqui você pode realizar a lógica para fazer logout do usuário
-    // e remover os dados do estado local
+    // Remover os dados do usuário do estado
     setUser(null);
   };
 
