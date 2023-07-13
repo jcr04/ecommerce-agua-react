@@ -12,6 +12,7 @@ import AdminPage from './pages/AdminPage';
 import Menu from './components/Menu';
 import Header from './components/Header';
 import './App.css';
+import Footer from './components/Footer';
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -46,6 +47,7 @@ const App = () => {
         </Route>
         <Route path="/admin" component={AdminPage} />
       </Switch>
+      <Footer/>
     </BrowserRouter>
   );
 };

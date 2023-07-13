@@ -1,13 +1,17 @@
 {
     "products": [
-        {"id": 1, "name": "Água Mineral 500ml", "price": 2.5, "image": "url-da-imagem" },
-        { "id": 2, "name": "Água Mineral 1L", "price": 4.5, "image": "url-da-imagem" },
-        { "id": 3, "name": "Água Mineral 5L", "price": 10.0, "image": "url-da-imagem" },
-        { "id": 4, "name": "Água Mineral com gás 500mL", "price": 3.0, "image": "url-da-imagem" },
-        { "id": 5, "name": "Água Mineral com gás 1L", "price": 5.0, "image": "url-da-imagem" },
-        { "id": 6, "name": "Água Mineral com gás 2L", "price": 7.0, "image": "url-da-imagem" },
-        { "id": 7, "name": "Água Mineral com gás 5L", "price": 15.0, "image": "url-da-imagem" },
-        { "id": 8, "name": "Galão de Água 20L", "price": 20.0, "image": "url-da-imagem" }
+        {"id": 1, "name": "Água Mineral 500ml", "price": 2.5, "image": "../Imgs/ÁguaMineral500ml.jpeg" },
+        { "id": 2, "name": "Água Mineral 1L", "price": 4.5, "image": "../Imgs/Água Mineral 1L.png" },
+        { "id": 3, "name": "Água Mineral 5L", "price": 10.0, "image": "../Imgs/Água Mineral 5L.png" },
+        { "id": 4, "name": "Água Mineral com gás 500mL", "price": 3.0, "image": "../Imgs/Água Mineral com gás 500mL.png" },
+        { "id": 5, "name": "Água Mineral com gás 1L", "price": 5.0, "image": "../Imgs/Água Mineral com gás 1L.png" },
+        { "id": 6, "name": "Água Mineral com gás 2L", "price": 7.0, "image": "../Imgs/Água Mineral com gás 2L.png" },
+        { "id": 7, "name": "Água Mineral com gás 5L", "price": 15.0, "image": "../Imgs/Água Mineral com gás 5L.jpg" },
+        { "id": 8, "name": "Galão de Água 20L", "price": 20.0, "image": "../Imgs/Galão de Água 20L.jpg" },
+        { "id": 9, "name": "Água Ouro Fino - 300ml - 08 Und", "price": 22.0, "image": "../Imgs/Galão de Água 20L.jpg" },
+        { "id": 10, "name": "ÁGUA MINERAL BIOLEVE SEM GÁS 510 ML", "price": 1.20, "image": "../Imgs/Galão de Água 20L.jpg" }
+        
+        
     ]
   }
   
