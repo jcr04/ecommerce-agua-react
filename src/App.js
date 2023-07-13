@@ -12,6 +12,7 @@ import Menu from './components/Menu';
 import Header from './components/Header';
 import CheckoutPage from './pages/CheckoutPage';
 import UserLoginPage from './pages/UserLoginPage';
+import UserProfile from './pages/Profile';
 import AdminLoginPage from './pages/AdminLoginPage';
 import './App.css';
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/admin" component={AdminPage} />
           <Route path="/login/user" component={UserLoginPage} />
           <Route path="/login/admin" component={AdminLoginPage} />
+          <Route path="/userprofile" component={UserLoginPage} />
         </Switch>
       </UserProvider>
     </BrowserRouter>

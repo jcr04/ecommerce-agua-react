@@ -1,4 +1,5 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { UserContext } from '../UserContext';
 
@@ -8,23 +9,26 @@ const UserLoginPage = () => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [newUsername, setNewUsername] = useState('');
-  const [newPassword, setNewPassword] = useState('');
 
-  const handleLogin = (event) => {
+  const handleLogin = async (event) => {
     event.preventDefault();
 
-    // Realize a validação dos dados de login
-    if (username.trim() !== '' && password.trim() !== '') {
-      const userData = {
-        username,
-        password,
-      };
+    try {
+      const response = await axios.get('http://localhost:3002/colaboradores');
+      const collaborators = response.data.colaboradores;
 
-      login(userData);
-      history.push('/');
-    } else {
-      alert('Por favor, preencha todos os campos');
+      const user = collaborators.find(
+        (collaborator) => collaborator.name === username && collaborator.email === password
+      );
+
+      if (user) {
+        login(user);
+        history.push('/profile');
+      } else {
+        alert('Usuário ou senha inválidos');
+      }
+    } catch (error) {
+      console.error(error);
     }
   };
 
@@ -34,29 +38,6 @@ const UserLoginPage = () => {
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
-  };
-
-  const handleNewUsernameChange = (event) => {
-    setNewUsername(event.target.value);
-  };
-
-  const handleNewPasswordChange = (event) => {
-    setNewPassword(event.target.value);
-  };
-
-  const handleRegistration = (event) => {
-    event.preventDefault();
-
-    // Realize a validação dos dados de cadastro
-    if (newUsername.trim() !== '' && newPassword.trim() !== '') {
-      // Adicione a lógica para salvar os dados do novo usuário no backend
-      // Por exemplo, você pode fazer uma requisição POST para uma rota de cadastro no seu backend
-
-      // Em seguida, redirecione o usuário para a página de login
-      history.push('/login/user');
-    } else {
-      alert('Por favor, preencha todos os campos');
-    }
   };
 
   return (
@@ -76,23 +57,6 @@ const UserLoginPage = () => {
           </label>
         </div>
         <button type="submit">Entrar</button>
-      </form>
-
-      <h2>Cadastre-se</h2>
-      <form onSubmit={handleRegistration}>
-        <div>
-          <label>
-            Novo Usuário:
-            <input type="text" value={newUsername} onChange={handleNewUsernameChange} />
-          </label>
-        </div>
-        <div>
-          <label>
-            Nova Senha:
-            <input type="password" value={newPassword} onChange={handleNewPasswordChange} />
-          </label>
-        </div>
-        <button type="submit">Cadastrar</button>
       </form>
     </div>
   );
