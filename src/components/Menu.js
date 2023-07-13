@@ -31,7 +31,7 @@ if (meuElemento.classList.contains('minha-classe')) {
 }
       
 
-    };
+};
   
     
       
