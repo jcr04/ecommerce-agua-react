@@ -28,7 +28,7 @@ const ProductList = ({ products, handleAddToCart }) => {
           
           <li key={product.id} className='Lista-li'>
             
-             <span> <img src={img1} /></span>
+             <span> <img src={product.image} /></span>
             <span>{product.name}</span>
             <span>R${product.price.toFixed(2)}</span>
             <Link to={`/product/${product.id}`}>Ver detalhes</Link>

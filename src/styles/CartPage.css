@@ -1,0 +1,11 @@
+.cart-section{
+    background-image: url("../Imgs/backgoundcarrinho.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -15px;
+    margin-bottom: -20px;
+    color: aliceblue;
+    b-webkit-box-shadow: inset -50px 58px 24px -51px rgba(142,151,242,0.66);
+    -moz-box-shadow: inset -50px 58px 24px -51px rgba(142,151,242,0.66);
+    box-shadow: inset -50px 58px 24px -51px rgba(142,151,242,0.66);
+}
