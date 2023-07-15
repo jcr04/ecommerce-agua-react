@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/CartPage.css'
 
 const calculateTotal = (cartItems) => {
   return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
@@ -15,6 +16,7 @@ const CartPage = ({ cartItems }) => {
   };
 
   return (
+    <section className='cart-section'>
     <div className="cart-container">
       <h2>Carrinho de Compras</h2>
       <div className="cart-items">
@@ -40,6 +42,7 @@ const CartPage = ({ cartItems }) => {
         </Link>
       </div>
     </div>
+    </section>
   );
 };
 
