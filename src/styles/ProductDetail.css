@@ -1,0 +1,55 @@
+.dv-1{
+    display: flex;
+    flex-direction: row;
+    height: 72vh;
+
+    align-items: center;
+  
+    justify-content: center;
+}
+.dv-1 img{
+   max-width: 400px !important;
+}
+
+.dv-1 h2 {
+    color: #3996f9;
+    font-size: 45px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    
+}
+.dv-1 button{
+    background-color:  #1f8bff;
+   margin-bottom: 3px;
+   border: 1px solid #1f8bff;
+}
+
+.dv-1 button:hover{
+    background-color:  #ffffff;
+    color: #1f8bff;
+ }
+ .id{
+    visibility: hidden;
+ }
+
+ .dv-img:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+@media (max-width:767px) {
+  
+    .dv-1{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        text-align: center;
+    }
+    .dv-1 img {
+        max-width: 174px !important;
+    }
+      }
+    
+     
