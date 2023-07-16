@@ -8,24 +8,11 @@ esse site feito em react tem como objetivo criar um ecommerce de venda de agua, 
 
 ## Produtos
 Menu prototipo de produtos do E-commerce Water.Inc
-<img width="960" alt="Screenshot_19" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/9ee1ca33-001b-40a1-8311-99196aef3e58">
+![Captura de tela 2023-07-16 122326](https://github.com/jcr04/ecommerce-agua-react/assets/70778525/4b7acde7-4a06-429d-ba17-49216a29e1e5)
 
-## Colaboradores
-Page prototipo de cadastro de Clientes
-<img width="960" alt="Screenshot_18" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/19c3d639-acd0-4488-8400-a5d4c92f785c">
-
-## AdmimPage
-Criação de Crud de Colaboradores
-<img width="960" alt="Screenshot_10" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/d9beb1a3-07f3-4a51-8ed9-ae818a54f268">
-
-## new feature(Details & discription)
-adicionado detalhes e descrição de produtos
-
-<img width="370" alt="Screenshot_2" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/e406ee01-fc6a-47ac-b143-7ba7ed24f33c">
 
 ## Carrinho(Feature)
 adicionado pagina carrinho prototipo
-
 ![Alt text](Screenshot_9.png)
 
 ## checkout de Produtos(Array setSelectedProducts)
@@ -35,28 +22,22 @@ produto selecionado no carrinho irá para pagina de checkout
 
 ### checkoutPage: 
 produto aparecerá com o iD pela requisição do Json Server
-<img width="951" alt="Screenshot_8" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/cf9756b0-79a9-4f52-8cc9-22d45bcd1631">
+![Captura de tela 2023-07-16 122533](https://github.com/jcr04/ecommerce-agua-react/assets/70778525/6a1c6389-c820-4e42-8e87-0dc02a78e7c9)
 
 ## Pagamentos (paymentMethod)
-adicionado sistema de pagamento prototipo
-![Alt text](Screenshot_3.png)
+adicionado sistema de pagamento
+![Captura de tela 2023-07-16 122452](https://github.com/jcr04/ecommerce-agua-react/assets/70778525/ad5c070c-f9e7-4a17-b474-7999d0583ffd)
 
 ### método Pix (paymentMethod && paymentData)
 * método prototipo de recebimento de PixKey(ChavePix)
-<img width="960" alt="Screenshot_3" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/aa630d57-eaf0-4328-8228-8d9b8d24812d">
-
-* Pix com QRCODE
-<img width="960" alt="Screenshot_5" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/4bd68abd-255b-4275-9aef-82c9ae8a4ddd">
+![Captura de tela 2023-07-16 122642](https://github.com/jcr04/ecommerce-agua-react/assets/70778525/648d0ce7-ce60-4cbd-9a8b-e74d2378169c)
 
 ### método Cartão de Crédito (paymentMethod && paymentData)
 método prototipo de recebimento de cartão de crédito
-<img width="957" alt="Screenshot_8" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/17acdcb0-d51e-484e-b1e2-e09e46bc3191">
+![Captura de tela 2023-07-16 122232](https://github.com/jcr04/ecommerce-agua-react/assets/70778525/5f109078-bfdb-4019-b03c-8769c7fc7723)
 
-### Requisição Get JSON Products:
-<img width="350" alt="Screenshot_16" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/b22ce7a2-02b9-4b5e-9acd-36ac64c4b945">
-
-## Requisição Get Json Colaboradores:
-<img width="437" alt="Screenshot_12" src="https://github.com/jcr04/ecommerce-agua-react/assets/70778525/c9c83892-b914-4669-accb-eb52452890c4">
+### método Cartão de Débito (paymentMethod && paymentData)
+![Captura de tela 2023-07-16 122241](https://github.com/jcr04/ecommerce-agua-react/assets/70778525/2c0872a0-273d-4693-8aa4-f0aac3beef06)
 
 
 
