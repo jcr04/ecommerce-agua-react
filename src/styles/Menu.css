@@ -13,9 +13,9 @@
     margin: auto;
     display: none;
     display: none;
-    margin-right: 26px;
+    margin-right: 82px !important;
 }
-@media (max-width:617px) {
+@media (max-width:789px) {
   
     .Header-nav{
         display: flex;
