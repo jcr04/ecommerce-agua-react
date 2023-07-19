@@ -5,7 +5,7 @@ import Clientes from './Clientes';
 const Collaborators = () => {
   const [collaborators, setCollaborators] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortedBy, setSortedBy] = useState(null);
+  const [setSortedBy] = useState(null);
   const [editingCollaboratorId, setEditingCollaboratorId] = useState(null);
   const [editFormData, setEditFormData] = useState({
     name: '',

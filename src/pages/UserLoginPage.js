@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { UserContext } from '../UserContext';
@@ -14,15 +14,10 @@ const UserLoginPage = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.get('http://localhost:3002/colaboradores');
-      const collaborators = response.data.colaboradores;
+      const response = await axios.post('/user/login', { username, password });
 
-      const user = collaborators.find(
-        (collaborator) => collaborator.name === username && collaborator.email === password
-      );
-
-      if (user) {
-        login(user);
+      if (response.status === 200) {
+        login(response.data.user);
         history.push('/profile');
       } else {
         alert('Usuário ou senha inválidos');

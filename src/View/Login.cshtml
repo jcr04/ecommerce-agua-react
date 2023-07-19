@@ -1,0 +1,26 @@
+@model UserLogin.Models.UserLoginModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login de Usuário</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Username)
+        @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Username)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Entrar</button>
+}
