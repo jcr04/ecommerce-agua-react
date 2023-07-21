@@ -50,7 +50,7 @@ const Menu = () => {
         <Route path="/produtos" component={ProductList} />
         <Route path="/carrinho" component={CartPage} />
         <Route path="/colaboradores" component={Collaborators} />
-        <Route path="/clientes" component={Clientes} />
+        {/* <Route path="/clientes" component={Clientes} /> */}
       </Switch>
     </div>
   );
