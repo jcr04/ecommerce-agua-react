@@ -1,6 +1,6 @@
 // App.js
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
 import Home from './components/Home';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './components/Cart';
@@ -27,28 +27,20 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home handleAddToCart={handleAddToCart} />
-        </Route>
+      <Routes>
+        <Route exact path="/" element={<Home handleAddToCart={handleAddToCart} />}/>
         <Route path="/product/:id" component={ProductDetail} />
-        <Route path="/cart">
-          <Cart cartItems={cartItems} />
-        </Route>
-        <Route path="/checkout">
-          <CheckoutPage />
-        </Route>
+        <Route path="/cart" element={<Cart cartItems={cartItems} />}/>
+        <Route path="/checkout" element={<CheckoutPage />}/>
         <Route path="/collaborators" component={Collaborators} />
-        <Route path="/clientes">
-          <Clientes addCollaborator={addCollaborator} /> {/* Passe a função addCollaborator como propriedade */}
-          <Route path="/profile/:id" component={Profile} />
-        </Route>
-        <Route path="/admin" component={AdminPage} />
-      </Switch>
-      <Footer/>
-    </BrowserRouter>
+        <Route path="/clientes" element={<Clientes addCollaborator={addCollaborator}/>}/>
+        <Route path="/profile/:id" element={<Profile/>} />
+        <Route path="/admin" element={<AdminPage/>} />
+    </Routes>
+    <Footer/>
+    </Router>
   );
 };
 
