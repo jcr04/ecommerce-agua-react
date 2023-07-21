@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import PaymentForm from './PaymentForm';
+import '../styles/CheckOut.css'
 
 const CheckoutPage = () => {
   const location = useLocation();
@@ -78,6 +79,7 @@ const CheckoutPage = () => {
 
   return (
     <div className='CheckoutPage'>
+      <div className='borda'>
       <h2>Checkout</h2>
       <p>Preço Total: {totalPrice}</p>
       <h3>Produtos selecionados:</h3>
@@ -139,7 +141,9 @@ const CheckoutPage = () => {
         </div>
       )}
       <button onClick={handleCheckout}>Finalizar Compra</button>
+      </div>
     </div>
+
   );
 };
 
