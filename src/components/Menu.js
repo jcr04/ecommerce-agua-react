@@ -46,6 +46,7 @@ const Menu = () => {
         </div>
       </nav>
       <img className="imgMenu" src={imgMenu} onClick={btnMenu} />
+
       
       <Routes>
         <Route path="/produtos"  component={ProductList} /> 
@@ -54,6 +55,7 @@ const Menu = () => {
         <Route path="/clientes"  component={Clientes} /> 
       </Routes>
       
+
     </div>
   );
 };
