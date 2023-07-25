@@ -271,6 +271,26 @@ button:hover {
   border: 1px solid #1F8BFF;
 }
 
+.produtos-selec {
+  
+}
+
+.metodos-de-pgmt {
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #1F8BFF;
+  text-align: center;
+}
+
+.itens-forma-de-pgmt {
+  margin-top: 5px;
+}
+
+.formaDePgmtMarginUp {
+  margin-top: 15px;
+}
+
 /* AdminPage.css */
 
 .AdminPage {

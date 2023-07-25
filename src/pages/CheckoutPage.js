@@ -79,68 +79,72 @@ const CheckoutPage = () => {
 
   return (
     <div className='CheckoutPage'>
-      <h2>Checkout</h2>
-      <h3>Produtos selecionados:</h3>
-      <ul className='itens-ul'>
-        {selectedProducts.map((product) => (
-          <li key={product.id} className='itens-li'><img src={product.image} alt={product.name} className='itens-img'/> {product.name} - R${product.price}</li>
-        ))}
-      </ul>
-      <p className='itens-ptot'>Preço Total: {totalPrice}</p>
-      <h3>Método de Pagamento:</h3>
-      <div>
-        <label>
-          <input
-            type="radio"
-            value="pix"
-            checked={paymentMethod === 'pix'}
-            onChange={handlePaymentMethodChange}
-          />
-          Pix
-        </label>
+      <div className='produtos-selec'>
+        <h2>Checkout</h2>
+        <h3>Produtos selecionados:</h3>
+        <ul className='itens-ul'>
+          {selectedProducts.map((product) => (
+            <li key={product.id} className='itens-li'><img src={product.image} alt={product.name} className='itens-img'/> {product.name} - R${product.price}</li>
+          ))}
+        </ul>
+        <p className='itens-ptot'>Preço Total: {totalPrice}</p>
       </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            value="credit_card"
-            checked={paymentMethod === 'credit_card'}
-            onChange={handlePaymentMethodChange}
-          />
-          Cartão de Crédito
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            value="debit_card"
-            checked={paymentMethod === 'debit_card'}
-            onChange={handlePaymentMethodChange}
-          />
-          Cartão de Débito
-        </label>
-      </div>
-      {paymentMethod === 'credit_card' && (
+      <div className='metodos-de-pgmt'>
+        <h3>Método de Pagamento:</h3>
         <div>
           <label>
-            Parcelas:
             <input
-              type="number"
-              value={installments}
-              onChange={handleInstallmentsChange}
+              type="radio"
+              value="pix"
+              checked={paymentMethod === 'pix'}
+              onChange={handlePaymentMethodChange}
             />
+            Pix
           </label>
         </div>
-      )}
-      {paymentMethod && (
         <div>
-          <h3>Forma de Pagamento:</h3>
-          <PaymentForm paymentMethod={paymentMethod} onSubmit={handlePaymentSubmit} />
+          <label>
+            <input
+              type="radio"
+              value="credit_card"
+              checked={paymentMethod === 'credit_card'}
+              onChange={handlePaymentMethodChange}
+            />
+            Cartão de Crédito
+          </label>
         </div>
-      )}
-      <button onClick={handleCheckout}>Finalizar Compra</button>
-    </div>
+        <div>
+          <label>
+            <input
+              type="radio"
+              value="debit_card"
+              checked={paymentMethod === 'debit_card'}
+              onChange={handlePaymentMethodChange}
+            />
+            Cartão de Débito
+          </label>
+        </div>
+        {paymentMethod === 'credit_card' && (
+          <div>
+            <label>
+              Parcelas:
+              <input
+                type="number"
+                value={installments}
+                onChange={handleInstallmentsChange}
+              />
+            </label>
+          </div>
+        )}
+        {paymentMethod && (
+          <div>
+            <h3 className='formaDePgmtMarginUp'>Forma de Pagamento:</h3>
+            <PaymentForm paymentMethod={paymentMethod} onSubmit={handlePaymentSubmit} />
+          </div>
+        )}
+        <button onClick={handleCheckout} className='itens-forma-de-pgmt'>Finalizar Compra</button>
+        </div>
+      </div>
   );
 };
 
