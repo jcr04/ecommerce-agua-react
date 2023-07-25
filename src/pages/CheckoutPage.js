@@ -27,6 +27,7 @@ const CheckoutPage = () => {
               id: productData.id,
               name: productData.name,
               price: productData.price, // Preço obtido do JSON da aplicação
+              image: productData.image
             };
 
             return product;
@@ -79,13 +80,13 @@ const CheckoutPage = () => {
   return (
     <div className='CheckoutPage'>
       <h2>Checkout</h2>
-      <p>Preço Total: {totalPrice}</p>
       <h3>Produtos selecionados:</h3>
-      <ul>
+      <ul className='itens-ul'>
         {selectedProducts.map((product) => (
-          <li key={product.id}>{product.name} - ${product.price}</li>
+          <li key={product.id} className='itens-li'><img src={product.image} alt={product.name} className='itens-img'/> {product.name} - R${product.price}</li>
         ))}
       </ul>
+      <p className='itens-ptot'>Preço Total: {totalPrice}</p>
       <h3>Método de Pagamento:</h3>
       <div>
         <label>

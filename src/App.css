@@ -158,6 +158,7 @@ button:hover {
   align-items: center;
   text-align: center;
   margin-top: 20px;
+  background-color: #E7E7E7;
 }
 
 .CheckoutPage ul {
@@ -167,6 +168,10 @@ button:hover {
 
 .CheckoutPage li {
   margin-bottom: 10px;
+}
+
+.CheckoutPage h2, h3 {
+  color: #1F8BFF;;
 }
 
 .CheckoutPage .payment-method {
@@ -243,6 +248,27 @@ button:hover {
 
 .CheckoutPage-checkoutButton:hover {
   background-color: #0056b3;
+}
+
+.itens-ul {
+  display: block;
+}
+
+.itens-li {
+  background-color: #fff;
+  padding: 5px 80px 5px 0px;
+  border: 1px solid #1F8BFF;;
+}
+
+.itens-img {
+  margin-right: 70px;
+  max-width: 150px;
+}
+
+.itens-ptot {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #1F8BFF;
 }
 
 /* AdminPage.css */
