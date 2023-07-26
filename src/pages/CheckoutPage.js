@@ -28,6 +28,7 @@ const CheckoutPage = () => {
               id: productData.id,
               name: productData.name,
               price: productData.price, // Preço obtido do JSON da aplicação
+              image: productData.image
             };
 
             return product;
@@ -100,50 +101,65 @@ const CheckoutPage = () => {
           Pix
         </label>
       </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            value="credit_card"
-            checked={paymentMethod === 'credit_card'}
-            onChange={handlePaymentMethodChange}
-          />
-          Cartão de Crédito
-        </label>
-      </div>
-      <div>
-        <label>
-          <input
-            type="radio"
-            value="debit_card"
-            checked={paymentMethod === 'debit_card'}
-            onChange={handlePaymentMethodChange}
-          />
-          Cartão de Débito
-        </label>
-      </div>
-      {paymentMethod === 'credit_card' && (
+      <div className='metodos-de-pgmt'>
+        <h3>Método de Pagamento:</h3>
         <div>
           <label>
-            Parcelas:
             <input
-              type="number"
-              value={installments}
-              onChange={handleInstallmentsChange}
+              type="radio"
+              value="pix"
+              checked={paymentMethod === 'pix'}
+              onChange={handlePaymentMethodChange}
             />
+            Pix
           </label>
         </div>
-      )}
-      {paymentMethod && (
         <div>
-          <h3>Forma de Pagamento:</h3>
-          <PaymentForm paymentMethod={paymentMethod} onSubmit={handlePaymentSubmit} />
+          <label>
+            <input
+              type="radio"
+              value="credit_card"
+              checked={paymentMethod === 'credit_card'}
+              onChange={handlePaymentMethodChange}
+            />
+            Cartão de Crédito
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              type="radio"
+              value="debit_card"
+              checked={paymentMethod === 'debit_card'}
+              onChange={handlePaymentMethodChange}
+            />
+            Cartão de Débito
+          </label>
+        </div>
+        {paymentMethod === 'credit_card' && (
+          <div>
+            <label>
+              Parcelas:
+              <input
+                type="number"
+                value={installments}
+                onChange={handleInstallmentsChange}
+              />
+            </label>
+          </div>
+        )}
+        {paymentMethod && (
+          <div>
+            <h3 className='formaDePgmtMarginUp'>Forma de Pagamento:</h3>
+            <PaymentForm paymentMethod={paymentMethod} onSubmit={handlePaymentSubmit} />
+          </div>
+        )}
+        <button onClick={handleCheckout} className='itens-forma-de-pgmt'>Finalizar Compra</button>
         </div>
       )}
       <button onClick={handleCheckout}>Finalizar Compra</button>
       </div>
     </div>
-
   );
 };
 

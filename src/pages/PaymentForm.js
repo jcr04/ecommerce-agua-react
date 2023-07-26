@@ -55,7 +55,7 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
           <div>
             <label>
               Número do Cartão:
-              <input
+              <input className='itens-forma-de-pgmt'
                 type="text"
                 value={cardNumber}
                 onChange={(event) => setCardNumber(event.target.value)}
@@ -66,7 +66,7 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
           <div>
             <label>
               Data de Validade:
-              <input
+              <input className='itens-forma-de-pgmt'
                 type="text"
                 value={expiryDate}
                 onChange={(event) => setExpiryDate(event.target.value)}
@@ -77,7 +77,7 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
           <div>
             <label>
               Código de Segurança:
-              <input
+              <input className='itens-forma-de-pgmt'
                 type="text"
                 value={securityCode}
                 onChange={(event) => setSecurityCode(event.target.value)}
@@ -90,7 +90,7 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
 
       {paymentMethod === 'debit_card' && (
         <div>
-          <div>
+          <div className='label-forma-de-pgmt'>
             <label>
               Número do Cartão:
               <input
@@ -104,7 +104,7 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
           <div>
             <label>
               Data de Validade:
-              <input
+              <input className='itens-forma-de-pgmt'
                 type="text"
                 value={expiryDate}
                 onChange={(event) => setExpiryDate(event.target.value)}
@@ -115,7 +115,7 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
           <div>
             <label>
               Código de Segurança:
-              <input
+              <input className='itens-forma-de-pgmt'
                 type="text"
                 value={securityCode}
                 onChange={(event) => setSecurityCode(event.target.value)}
@@ -132,7 +132,7 @@ const PaymentForm = ({ paymentMethod, onSubmit }) => {
         </div>
       )}
 
-      <button type="submit">Pagar</button>
+      <button type="submit" className='itens-forma-de-pgmt'>Pagar</button>
     </form>
   );
 };
