@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import PaymentForm from './PaymentForm';
+import '../styles/CheckOut.css'
 
 const CheckoutPage = () => {
   const location = useLocation();
@@ -79,15 +80,26 @@ const CheckoutPage = () => {
 
   return (
     <div className='CheckoutPage'>
-      <div className='produtos-selec'>
-        <h2>Checkout</h2>
-        <h3>Produtos selecionados:</h3>
-        <ul className='itens-ul'>
-          {selectedProducts.map((product) => (
-            <li key={product.id} className='itens-li'><img src={product.image} alt={product.name} className='itens-img'/> {product.name} - R${product.price}</li>
-          ))}
-        </ul>
-        <p className='itens-ptot'>Preço Total: {totalPrice}</p>
+      <div className='borda'>
+      <h2>Checkout</h2>
+      <p>Preço Total: {totalPrice}</p>
+      <h3>Produtos selecionados:</h3>
+      <ul>
+        {selectedProducts.map((product) => (
+          <li key={product.id}>{product.name} - ${product.price}</li>
+        ))}
+      </ul>
+      <h3>Método de Pagamento:</h3>
+      <div>
+        <label>
+          <input
+            type="radio"
+            value="pix"
+            checked={paymentMethod === 'pix'}
+            onChange={handlePaymentMethodChange}
+          />
+          Pix
+        </label>
       </div>
       <div className='metodos-de-pgmt'>
         <h3>Método de Pagamento:</h3>
@@ -144,7 +156,10 @@ const CheckoutPage = () => {
         )}
         <button onClick={handleCheckout} className='itens-forma-de-pgmt'>Finalizar Compra</button>
         </div>
+      )}
+      <button onClick={handleCheckout}>Finalizar Compra</button>
       </div>
+    </div>
   );
 };
 

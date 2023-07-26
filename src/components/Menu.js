@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
 import ProductList from '../pages/ProductList';
 import CartPage from '../pages/CartPage';
 import Collaborators from '../pages/Collaborators';
@@ -30,7 +30,7 @@ const Menu = () => {
       meuElemento.classList.add('minha-classe');
     }
   };
-
+ 
   return (
     <div className='Header-nav'>
       <nav>
@@ -39,19 +39,23 @@ const Menu = () => {
         </div>
         <div className="menu-buttons" ref={meuElementoRef}>
           {menuItems.map((item) => (
-            <Link key={item.label} to={item.path}>
-              {item.label}
+            <Link key={item.label} to={item.path} >
+              {item.label} 
             </Link>
           ))}
         </div>
       </nav>
       <img className="imgMenu" src={imgMenu} onClick={btnMenu} />
-      <Switch>
-        <Route path="/produtos" component={ProductList} />
-        <Route path="/carrinho" component={CartPage} />
-        <Route path="/colaboradores" component={Collaborators} />
-        <Route path="/clientes" component={Clientes} />
-      </Switch>
+
+      
+      <Routes>
+        <Route path="/produtos"  component={ProductList} /> 
+        <Route path="/carrinho"  component={CartPage } /> 
+        <Route path="/colaboradores"  component={Collaborators}  /> 
+        <Route path="/clientes"  component={Clientes} /> 
+      </Routes>
+      
+
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import '../styles/Cliente.css'
 
 const Clients = ({ addCollaborator }) => {
   const [formData, setFormData] = useState({
@@ -25,6 +26,7 @@ const Clients = ({ addCollaborator }) => {
 
   return (
     <div className='clients-box'>
+      <div className='borda-cliente'>
       <h1>Página de Clientes</h1>
       <form onSubmit={handleSubmit} className='form'>
 
@@ -62,6 +64,7 @@ const Clients = ({ addCollaborator }) => {
         </li>
         {/* Adicione mais clientes aqui */}
       </ul>
+      </div>
     </div>
   );
 };

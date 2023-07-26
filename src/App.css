@@ -465,13 +465,13 @@ button:hover {
   margin-left: 10px;
 }
 
-.clients-box {
+/* .clients-box {
   text-align: center;
   padding: 5px;
   max-width: fit-content;
   background-color: rgb(147, 212, 255);
   margin: 5px;
-}
+} */
 
 .form {
   display: flex;
